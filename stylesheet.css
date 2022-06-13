@@ -1,0 +1,101 @@
+.calculator {
+    text-align: center;
+    /* Fungsi text-align itu sendiri adalah mengatur posisi text. */
+
+    margin: 0 auto;
+    /* Diperhitungkan secara otomatis oleh browser. Contoh: margin: 0 auto; */
+        /* margin digunakan untuk mengaplikasikan jarak tepi pada sebuah elemen bagian luar (tepi garis luar). */
+            /* Margin memiliki 4 macam penjabaran yang dapat digunakan secara terpisah sendiri-sendiri, yaitu: margin-top, margin-right, margin-bottom dan margin-left. */
+
+    padding-top: 200px;
+    /* padding digunakan untuk mengaplikasikan jarak tepi pada sebuah elemen bagian dalam (Jarak tepi di dalam sebuah element).  */
+        /* padding memiliki 4 individual property yang dapat digunakan secara terpisah sendiri-sendiri, yaitu: padding-top, padding-right, padding-bottom dan padding-left */
+    
+    width: 400px;
+    /* width yang berarti lebar */
+}
+
+.calculator-screen-history {
+    width: 100%;
+    height: 40px;  
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.calculator-screen {
+    width: 100%;
+    /* Mengatur width atau height dengan persen */
+
+    height: 100px;
+    /* height yang berarti tinggi */
+    
+    background-color: #252525;
+    /* Dengan properti background-color Anda bisa menggunakannya untuk memberikan warna latar belakang pada elemen HTML. */
+
+    color: #fff;
+    /* color digunakan untuk memberikan color atau warna pada elemen HTML */
+    
+    text-align: right;
+    
+    font-size: 36px;
+    /* Dengan properti font-size Anda bisa menggunakannya untuk menetapkan ukuran pada teks. */
+
+    border: none;
+    /* Border pada CSS digunakan untuk memberikan garis pada elemen HTML. */
+    
+    padding: 0 20px;
+    /* padding: vertical horizontal = padding: atas&bawah kiri&kanan */
+    /* padding: top horizontal bottom = padding: atas kiri&kanan bawah */
+    /* padding: top right bottom left = padding: atas kanan bawah kiri */
+
+    box-sizing: border-box;
+    /* css property yang digunakan untuk merubah kalkulasi dalam mengukur lebar element. */
+        /* content-box : Ini adalah nilai default. Lebar dan tinggi (width dan height) hanya menyertakan content, tidak termasuk border, padding dan margin. */
+        /* padding-box : Lebar dan tinggi (width dan height) berdasarkan padding (sudah termasuk padding) tetapi tidak termasuk border dan margin. */
+        /* border-box : Lebar dan tinggi (width dan height) berdasarkan padding dan border (sudah termasuk padding dan border) tetapi tidak termasuk margin. */
+        /* inherit : Value dari property box-sizing mengikuti aturan element induk sebelumnya. */
+}
+
+.calculator-keys {
+    width: 100%;
+}
+
+.row  {
+    display: flex;
+    /* Pada CSS Anda bisa mengatur tata letak untuk elemen HTML dengan properti display, ini sangat berguna untuk mendesign sebuah halaman web. */
+        /* Flex (flexibel) adalah salah satu super power display dari CSS3. Memungkinkan untuk pengaturan layout, posisi dan tampilan dari suatu konten yang ukurannya belum diketahui atau bernilai dinamis. Oleh sebab itu, nilai ini dinamakan Flex diambil dari kata flexibel yang berarti mudah diatur, disesuaikan dan ditukar-tukar. */
+}
+
+button {
+    height: 80px;
+    background-color: gray;
+    border: 1px solid black;
+    font-size: 32px;
+    color: white;
+    width: 25%;
+    
+    outline: none;
+    /* outline adalah garis yang ada setelah border dari sebuah objek. */
+}
+
+.all-clear, .zero-btn {
+    width: 50%;
+}
+
+.operator, .equal-sign {
+    background-color: orange;
+}
+
+button:hover {
+/* Hover pada CSS adalah suatu fungsi yang hanya berjalan apabila kursor berada diatas suatu objek tertentu. */
+    background-color: darkgray;
+}
+
+.operator:hover, .equal-sign:hover {
+    background-color: darkorange;
+}
